@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Click game 20/80</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body>
+  <h1>Click Game 20 / 80</h1>
+  <p>
+    This is the click game.<br />
+    Everytime you click, there is a 20% change for red and 80% for green for the button lights up.<br />
+    If you guess the button that will lights up, you get a cookie 🍪, otherwise you'll get electric discharge ⚡.<br />
+    You have 40 guesses, do your best 👌
+  </p>
+  <p></p>
+
+  <div class="container">
+    <button class="red" onclick="window.click(0)"></button>
+    <button class="green" onclick="window.click(1)"></button>
+  </div>
+
+  <div class="results">
+    <div class="grid"></div>
+    <p></p>
+    <button class="reset btn btn-primary" onclick="window.init()">Restart Game</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
